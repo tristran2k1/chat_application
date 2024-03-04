@@ -1,0 +1,14 @@
+hashpass: bcrypt
+env: @nestjs/config
+
+auth: passport-jwt @nestjs/jwt @nestjs/passport passport-local passport-jwt passport
+        @types/passport-jwt @types/passport-local
+
+dto: class-transformer class-validator
+orm: @nestjs/typeorm typeorm nestjs-typeorm-paginate
+prisma: @prisma/client
+
+msql: mysql2
+postgres: pg
+
+socket: @nestjs/websockets @nestjs/platform-socket.io

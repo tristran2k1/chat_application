@@ -1,0 +1,35 @@
+services:
+  messenger_api:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - 3000:3000
+    env_file:
+      - .env
+    volumes:
+      - ./src:/usr/src/app/src
+
+  postgres_db:
+    image: postgres:15
+    ports:
+      - 5432:5432
+    env_file:
+      - .env
+    volumes:
+      - postgres-db-volume:/var/lib/postgresql/data
+
+volumes:
+    postgres-db-volume:
+        driver: local
+        driver_opts:
+            type: none
+            o: bind
+            device: ./data
+# docker-compose up --build
+# docker-compose -f docker-compose.prod.yml up --build
+
+# options:
+# -d : run in background
+
+

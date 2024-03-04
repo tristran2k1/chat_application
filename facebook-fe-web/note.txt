@@ -1,0 +1,3 @@
+material: @angular/material
+jwt: @auth0/angular-jwt
+socket: ngx-socket-io
