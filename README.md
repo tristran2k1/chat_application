@@ -6,7 +6,8 @@
 - [x] Chat: chat room, add user to room
 - [ ] Chat: send media
 - [ ] Send notification
-- [ ] React between users together: follow, likes, comments...
+- [ ] Manage media: CRUD
+- [ ] React between users: follow, likes, comments...
 
 ## Technical
 - [x] Json-web-token
